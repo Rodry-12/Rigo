@@ -1,0 +1,107 @@
+/* Contenedor del formulario "Realizar Pedido" */
+.formulario-pedido {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 500px;
+  margin: 30px auto;
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  text-align: center;
+}
+
+/* Estilos de los campos de entrada */
+.formulario-pedido .campo-formulario {
+  margin-bottom: 25px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.formulario-pedido label {
+  font-weight: bold;
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.formulario-pedido input {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  transition: all 0.3s ease-in-out;
+  margin-top: 5px;
+}
+
+.formulario-pedido input:focus {
+  border-color: #5a9bd4; /* Resalta el borde al enfocar el campo */
+  background-color: #ffffff; /* Cambia el fondo al enfocar */
+  outline: none;
+}
+
+/* Botones: Enviar y Cancelar */
+.botones-formulario {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  width: 100%;
+}
+
+.botones-formulario button {
+  padding: 10px;
+  font-size: 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  border: none;
+  transition: all 0.3s ease;
+  font-weight: bold;
+}
+
+.btn-enviar {
+  background-color: #5a9bd4;
+  color: white;
+}
+
+.btn-enviar:hover {
+  background-color: #4a8abf;
+}
+
+.btn-cancelar {
+  background-color: #ffcb47;
+  color: white;
+}
+
+.btn-cancelar:hover {
+  background-color: #e6b63c;
+}
+
+/* Estilo general para los botones */
+.botones-formulario button:focus {
+  outline: none;
+  transform: translateY(-2px); /* Efecto de levantado al hacer hover */
+}
+
+/* Responsividad: Asegura que los elementos se vean bien en pantallas más pequeñas */
+@media (max-width: 600px) {
+  .formulario-pedido {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .botones-formulario {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .botones-formulario button {
+    width: 100%;
+  }
+}

@@ -1,0 +1,63 @@
+/* Estilo del contenedor principal */
+.header {
+  display: flex;
+  justify-content: space-around; /* Espaciado entre logo y carrito */
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #f3f4f6; /* Color suave de fondo */
+  border-bottom: 1px solid #e0e0e0; /* Línea sutil */
+}
+
+/* Estilo del logo */
+.header .logo h1 {
+  color: #5a9bd4; /* Azul suave */
+  font-size: 30px;
+  margin: 0;
+}
+
+/* Estilo del contenedor del carrito */
+.header .carrito {
+  display: flex;
+  align-items: center;
+  gap: 15px; /* Espaciado entre ícono y botón */
+}
+
+/* Estilo del enlace del carrito */
+.header .carrito span {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #5a9bd4; /* Color suave del ícono */
+}
+
+/* Ícono del carrito */
+.header .carrito i {
+  font-size: 24px;
+  margin-right: 8px;
+}
+
+/* Contador del carrito */
+.header .carrito .carrito-count {
+  font-size: 18px;
+  color: #333; /* Gris oscuro para el número del carrito */
+  background-color: #ffcb47; /* Amarillo suave para resaltar el número */
+  padding: 2px 8px;
+  border-radius: 50%;
+}
+
+/* Estilo del botón "Limpiar carrito" */
+.header .carrito .btn-limpiar {
+  background-color: #ffcb47; /* Amarillo suave */
+  color: #333; /* Texto oscuro */
+  border: none;
+  border-radius: 5px;
+  padding: 8px 12px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Efecto hover del botón */
+.header .carrito .btn-limpiar:hover {
+  background-color: #e6b63c; /* Amarillo más oscuro */
+}

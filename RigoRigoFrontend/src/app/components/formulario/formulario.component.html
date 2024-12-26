@@ -1,0 +1,27 @@
+<!-- Formulario para capturar cédula y dirección -->
+<div *ngIf="formularioVisible" class="formulario-pedido">
+  <form (ngSubmit)="enviarPedido()">
+    <!-- Campo para cédula -->
+    <div class="campo-formulario">
+      <label for="cedula">Cédula:</label>
+      <input id="cedula" type="number" [(ngModel)]="pedido.cedulaCliente" name="cedula" required />
+    </div>
+
+    <!-- Campo para dirección -->
+    <div class="campo-formulario">
+      <label for="direccion">Dirección de entrega:</label>
+      <input id="direccion" type="text" [(ngModel)]="pedido.direccionEntrega" name="direccion" required />
+    </div>
+
+    <div class="campo-formulario">
+      <label for="total">Total a pagar:</label>
+      <input id="total" type="text" [value]="totalCarrito | currency" disabled />
+    </div>
+
+    <!-- Botones: Enviar y Cancelar -->
+    <div class="botones-formulario">
+      <button type="submit" class="btn-enviar">Enviar Pedido</button>
+      <button type="button" (click)="cancelarFormulario()" class="btn-cancelar">Cancelar</button>
+    </div>
+  </form>
+</div>

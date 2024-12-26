@@ -1,0 +1,15 @@
+<app-header></app-header>
+
+<div *ngIf="!formularioVisible">
+  <app-products-list></app-products-list>
+  <!-- Botón para realizar pedido -->
+  <div class="pedido-container">
+    <button class="btn-realizar-pedido" (click)="mostrarFormularioPedido()">Realizar Pedido</button>
+  </div>
+</div>
+
+<app-formulario
+  [formularioVisible]="formularioVisible"
+  [totalCarrito]="totalCarrito"
+  (formularioOculto)="ocultarFormularioPedido($event)">
+</app-formulario>

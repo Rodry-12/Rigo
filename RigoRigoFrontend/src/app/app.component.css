@@ -1,0 +1,19 @@
+.pedido-container {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.btn-realizar-pedido {
+  background-color: #5a9bd4; /* Azul suave */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-realizar-pedido:hover {
+  background-color: #4a8abf;
+}
