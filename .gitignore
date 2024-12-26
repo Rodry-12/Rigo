@@ -1,0 +1,19 @@
+# Ignorar node_modules y archivos generados en el frontend
+**/node_modules/
+
+# Ignorar archivos específicos en el backend
+**/bin/
+**/obj/
+**/Debug/
+**/Release/
+
+# Ignorar archivos globales del sistema
+.DS_Store
+Thumbs.db
+*.log
+
+# Ignorar archivos de logs
+*.log
+
+# Ignorar otros archivos temporales
+*.tmp
